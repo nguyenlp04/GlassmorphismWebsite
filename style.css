@@ -1,0 +1,338 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+body {
+  font-family: "Poppins", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  /* background-color: #cfc1cb;
+  background: url("https://assets-global.website-files.com/6009ec8cda7f305645c9d91b/620bd6d655f2044afa28bff4_glassmorphism.jpeg"); */
+  display: flex;
+  background: linear-gradient(
+    to left bottom,
+    rgb(135, 135, 246),
+    rgb(178, 219, 240),
+    rgb(228, 236, 251)
+  );
+
+  justify-content: center;
+  font-weight: 300;
+  align-items: center;
+}
+.container {
+  box-shadow: 0 0 20px rgb(179, 176, 215);
+  height: 700px;
+  width: 1400px;
+  background-color: #e6c7c7;
+  border-radius: 20px;
+}
+.head .red,
+.head .gray,
+.head .yellow {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+.head {
+  background-color: rgb(215, 219, 235);
+  height: 50px;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.head .red {
+  background-color: #fa6058;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.head .gray {
+  background-color: #60d065;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.head .yellow {
+  background-color: #f8ce52;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.head .red::before {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 1.5px;
+  background-color: black;
+  transform: rotate(-45deg);
+}
+.head .red::after {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 1.5px;
+  background-color: black;
+  transform: rotate(45deg);
+}
+
+.head .yellow::before {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 1.5px;
+  background-color: black;
+}
+.head .gray::before {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 1.5px;
+  background-color: black;
+}
+.head .gray::after {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 1.5px;
+  background-color: black;
+  transform: rotate(90deg);
+}
+
+.three {
+  padding-left: 30px;
+  display: flex;
+  width: 20%;
+}
+.menutop {
+  width: 80%;
+}
+
+.menu a {
+  text-decoration: none;
+  font-weight: 500;
+}
+.menu ul li {
+  list-style: none;
+  padding-left: 10px;
+  padding: 5px 20px;
+  width: 170px;
+  transition: 0.25s;
+}
+.menu li:hover {
+  border-radius: 10px;
+  background-color: #c8d7eb;
+  width: 170px;
+}
+.menutop .item {
+  align-items: center;
+  display: flex;
+}
+.item h4 {
+  padding-right: 70px;
+}
+.item h4 a {
+  text-decoration: none;
+  color: black;
+  transition: 0.25s;
+}
+
+.menutop .item h4 a:hover {
+  color: #bd2daa;
+}
+.menutop .item i {
+  cursor: pointer;
+  font-size: 22px;
+  padding-left: 40px;
+  position: relative;
+}
+.menutop .item i::after {
+  position: absolute;
+  content: "3";
+  font-size: 11px;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  top: -8px;
+  right: -7px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 50%;
+  background-color: #3a6df1;
+  border: 2px solid white;
+}
+.menutop .item i:hover {
+  color: #4b4742;
+}
+.item input {
+  width: 300px;
+  height: 35px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: rgb(232, 234, 242);
+  padding-left: 10px;
+}
+
+.avatar {
+  width: 35px;
+  height: 35px;
+  margin-left: 50px;
+  border-radius: 50%;
+  background: url(./avatar.png);
+  background-size: cover;
+  cursor: pointer;
+}
+/* body */
+.menu {
+  padding-bottom: 20px;
+  width: 20%;
+  overflow: scroll;
+  height: 630px;
+  background-color: rgb(241, 241, 253);
+  border-bottom-left-radius: 20px;
+  padding-left: 30px;
+}
+
+.menu h3 {
+  padding: 20px 0;
+  font-weight: 500;
+}
+.menu i {
+  padding-right: 10px;
+}
+.body {
+  display: flex;
+}
+.content .background {
+  background: url(./backgroundAI.png);
+  width: 1000px;
+  margin: 30px;
+  height: 250px;
+  border-radius: 20px;
+  box-shadow: 0 0 8px rgb(76, 65, 228);
+}
+.content {
+  width: 100%;
+  height: 650px;
+  overflow: scroll;
+  border-bottom-right-radius: 20px;
+  background-color: #f4dff4;
+}
+.content .install {
+  padding-left: 80px;
+  font-size: 18px;
+}
+.content i {
+  padding-right: 15px;
+  padding-left: 20px;
+}
+.content td {
+  width: 400px;
+  padding: 8px 0;
+}
+.content td:last-child {
+  text-align: right;
+}
+.content .red {
+  width: 10px;
+  margin: 0 8px;
+  height: 10px;
+  background-color: #3bf083;
+  border-radius: 50%;
+}
+.content td:nth-child(2) {
+  display: flex;
+  align-items: center;
+  width: 300px;
+}
+.content td:nth-child(3) {
+  width: 200px;
+  padding-right: 20px;
+}
+.content tr {
+  transition: 0.25s;
+}
+.content .install button {
+  width: 80px;
+  height: 30px;
+  background-color: #3a6df2;
+  box-shadow: 0 0 8px rgb(76, 65, 228);
+  color: white;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+}
+.content table {
+  background-color: #cdd2e6;
+  box-shadow: 0 0 20px rgb(194, 173, 173);
+  border-radius: 30px;
+  transition: 0.25s;
+  border-collapse: collapse;
+}
+.content tr:hover {
+  background-color: #cfd9e8;
+}
+
+.content h3 {
+  padding: 10px 0;
+}
+.content .items {
+  display: flex;
+}
+.content .plan {
+  padding-left: 80px;
+  font-size: 18px;
+  padding-bottom: 30px;
+}
+.plan .item {
+  width: 250px;
+  margin-right: 20px;
+  background-color: #dde7f1;
+  padding: 25px;
+  box-shadow: 0 0 20px rgb(207, 187, 187);
+  border-radius: 15px;
+  transition: 0.25s;
+}
+.plan .item:hover {
+  background-color: #c8e1ec;
+}
+.plan .title i {
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
+.item .title {
+  display: flex;
+}
+.item button {
+  float: right;
+  width: 90px;
+  height: 30px;
+  background-color: #3a6df1;
+  box-shadow: 0 0 8px rgb(76, 65, 228);
+  border-radius: 25px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.item p {
+  padding-bottom: 20px;
+  height: 80px;
+  overflow: scroll;
+}
+hr {
+  margin-bottom: 15px;
+}
